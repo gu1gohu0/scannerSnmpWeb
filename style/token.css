@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3d68e0;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.token{
+    margin-left: 5rem;
+}
+
+.links {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+.export-btn {
+    background-color: #adafb1;
+    color: white;
+    border: none;
+    padding: 1px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-left:0.5rem;
+    
+}
+
+.export-btn:hover {
+    background-color: #0056b3;
+}
+
+.export-btn#delete:hover {
+    background-color: #b92c09;
+}
+
+.export-btn#edit:hover {
+    background-color: #0f9c16;
+}
+
+.export-btn#salvar:hover {
+    background-color: #2356e4;
+}
+
+
+
+
+
+/* Estilo para a bolinha de status ((((MUDAR PARA CSS DO INDEX)))*/
+.bolinha-status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bolinha-status.verde {
+    background-color: green;
+}
+
+.bolinha-status.amarelo {
+    background-color: yellow;
+}
+
+.bolinha-status.vermelho {
+    background-color: red;
+}

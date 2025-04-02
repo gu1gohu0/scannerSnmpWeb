@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Scanner SNMP</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Banco de Dados</h1>
+        <p>Mostra os dados scanneados da rede</p>
+    </header>
+    <div class="container">
+        <a href="pages/tokens.html" class="links">TOKEN</a>
+    </div>
+    
+    <div class="container">
+        <button class="export-btn">Excel</button>
+        <button class="export-btn">PDF</button>
+        <div class="controls">
+            <label for="entries">Resultados por página:</label>
+            <select id="entries">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+            </select>
+            <label for="search">Pesquisar</label>
+            <input type="text" id="search" placeholder="Digite para buscar...">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>IP</th>
+                    <th>Serial Number</th>
+                    <th>Modelo</th>
+                    <th>Data</th>
+                    <th>Contador</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button>Anterior</button>
+            <span>1</span>
+            <button>Próximo</button>
+        </div>
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+</html>

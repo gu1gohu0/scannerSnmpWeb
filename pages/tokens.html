@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Token</title>
+    <link rel="stylesheet" href="../style/token.css">
+    <script src="../script/token.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Gerador de Token e Criador de Tabela</h1>
+    </header>
+    <div class="container">
+        <a href="../index.html" class="links">CONTADORES</a>
+    </div>
+    <div class="container">
+        <label for="cliente" class="token">Nome do Cliente:</label>
+        <input type="text" id="cliente" placeholder="Digite o nome do cliente" class="token">
+        <button onclick="gerarToken()" class="export-btn">Gerar Token</button>
+        <input type="text" id="token" readonly class="token">
+        <button onclick="criarTabela()" class="export-btn">Criar Cliente</button>
+        <a><button onclick="deletarToken()" class="export-btn" id="delete">DELETAR</button></a>
+        <a href="../pages/tokenFunction/edit.html"><button class="export-btn" id="edit" >EDITAR</button></a>
+    </div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>CLIENTE</th>
+                    <th>TOKEN</th>
+                    <th>IP RANGE</th>
+                    <th>ATIVOS</th>
+                    <th>PENDENTES</th>
+                    <th>ULTIMO SCAN</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
