@@ -15,9 +15,9 @@ function calcularDiferencaMeses(data) {
 function ipDesatualizados(data, totalIps) {
     const meses = calcularDiferencaMeses(data);
     if (meses > 2) {
-        return totalIps; // Retorna o total de IPs desatualizados (created_at > 2 meses)
+        return totalIps; 
     } else {
-        return 0; // Retorna 0 se não houver IPs desatualizados
+        return 0; 
     }
 } 
 
@@ -60,10 +60,10 @@ function carregarDados() {
             return response.json();
         })
         .then(data => {
-            console.log("Dados recebidos:", data); // Depuração
+            console.log("Dados recebidos:", data); 
 
             const tbody = document.querySelector("table tbody");
-            tbody.innerHTML = ""; // Limpa a tabela antes de adicionar os novos dados
+            tbody.innerHTML = ""; 
 
             // Verifica se os dados contêm a propriedade 'printers' e se é um array
             if (data.printers && Array.isArray(data.printers)) {
