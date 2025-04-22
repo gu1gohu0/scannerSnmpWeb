@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
             return response.json();
         })
         .then(data => {
-            console.log("Dados recebidos:", data); // Depuração
+            console.log("Dados recebidos:", data); 
 
             const tbody = document.querySelector("table tbody");
-            tbody.innerHTML = ""; // Limpa a tabela antes de adicionar os novos dados
+            tbody.innerHTML = ""; 
 
             if (Array.isArray(data) || printer.id != 1) {
                 data.forEach(printer => {
